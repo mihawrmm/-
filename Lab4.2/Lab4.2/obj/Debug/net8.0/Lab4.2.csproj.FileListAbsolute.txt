@@ -1,0 +1,14 @@
+D:\ООП\Lab4\Lab4.2\Lab4.2\bin\Debug\net8.0\Lab4.2.exe
+D:\ООП\Lab4\Lab4.2\Lab4.2\bin\Debug\net8.0\Lab4.2.deps.json
+D:\ООП\Lab4\Lab4.2\Lab4.2\bin\Debug\net8.0\Lab4.2.runtimeconfig.json
+D:\ООП\Lab4\Lab4.2\Lab4.2\bin\Debug\net8.0\Lab4.2.dll
+D:\ООП\Lab4\Lab4.2\Lab4.2\bin\Debug\net8.0\Lab4.2.pdb
+D:\ООП\Lab4\Lab4.2\Lab4.2\obj\Debug\net8.0\Lab4.2.GeneratedMSBuildEditorConfig.editorconfig
+D:\ООП\Lab4\Lab4.2\Lab4.2\obj\Debug\net8.0\Lab4.2.AssemblyInfoInputs.cache
+D:\ООП\Lab4\Lab4.2\Lab4.2\obj\Debug\net8.0\Lab4.2.AssemblyInfo.cs
+D:\ООП\Lab4\Lab4.2\Lab4.2\obj\Debug\net8.0\Lab4.2.csproj.CoreCompileInputs.cache
+D:\ООП\Lab4\Lab4.2\Lab4.2\obj\Debug\net8.0\Lab4.2.dll
+D:\ООП\Lab4\Lab4.2\Lab4.2\obj\Debug\net8.0\refint\Lab4.2.dll
+D:\ООП\Lab4\Lab4.2\Lab4.2\obj\Debug\net8.0\Lab4.2.pdb
+D:\ООП\Lab4\Lab4.2\Lab4.2\obj\Debug\net8.0\Lab4.2.genruntimeconfig.cache
+D:\ООП\Lab4\Lab4.2\Lab4.2\obj\Debug\net8.0\ref\Lab4.2.dll
