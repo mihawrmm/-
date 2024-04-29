@@ -1,0 +1,11 @@
+D:\ООП\Lab12\Lab12\bin\Debug\Lab12.exe.config
+D:\ООП\Lab12\Lab12\bin\Debug\Lab12.exe
+D:\ООП\Lab12\Lab12\bin\Debug\Lab12.pdb
+D:\ООП\Lab12\Lab12\obj\Debug\Lab12.csproj.AssemblyReference.cache
+D:\ООП\Lab12\Lab12\obj\Debug\Lab12.csproj.ResolveComReference.cache
+D:\ООП\Lab12\Lab12\obj\Debug\Lab12.Form1.resources
+D:\ООП\Lab12\Lab12\obj\Debug\Lab12.Properties.Resources.resources
+D:\ООП\Lab12\Lab12\obj\Debug\Lab12.csproj.GenerateResource.cache
+D:\ООП\Lab12\Lab12\obj\Debug\Lab12.csproj.CoreCompileInputs.cache
+D:\ООП\Lab12\Lab12\obj\Debug\Lab12.exe
+D:\ООП\Lab12\Lab12\obj\Debug\Lab12.pdb
