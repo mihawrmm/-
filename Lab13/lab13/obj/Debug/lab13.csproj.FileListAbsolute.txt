@@ -1,0 +1,17 @@
+C:\Users\Admin\Desktop\OOP\lab13\lab13\bin\Debug\lab13.exe.config
+C:\Users\Admin\Desktop\OOP\lab13\lab13\bin\Debug\lab13.exe
+C:\Users\Admin\Desktop\OOP\lab13\lab13\bin\Debug\lab13.pdb
+C:\Users\Admin\Desktop\OOP\lab13\lab13\obj\Debug\lab13.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\OOP\lab13\lab13\obj\Debug\lab13.Form1.resources
+C:\Users\Admin\Desktop\OOP\lab13\lab13\obj\Debug\lab13.Properties.Resources.resources
+C:\Users\Admin\Desktop\OOP\lab13\lab13\obj\Debug\lab13.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\OOP\lab13\lab13\obj\Debug\lab13.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\OOP\lab13\lab13\obj\Debug\lab13.exe
+C:\Users\Admin\Desktop\OOP\lab13\lab13\obj\Debug\lab13.pdb
+D:\ООП\Lab14\lab13\obj\Debug\lab13.csproj.AssemblyReference.cache
+D:\ООП\Lab14\lab13\obj\Debug\lab13.Form1.resources
+D:\ООП\Lab14\lab13\obj\Debug\lab13.Properties.Resources.resources
+D:\ООП\Lab14\lab13\obj\Debug\lab13.csproj.GenerateResource.cache
+D:\ООП\Lab14\lab13\obj\Debug\lab13.csproj.CoreCompileInputs.cache
+D:\ООП\Lab14\lab13\obj\Debug\lab13.exe
+D:\ООП\Lab14\lab13\obj\Debug\lab13.pdb
