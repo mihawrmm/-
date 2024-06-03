@@ -1,130 +1,119 @@
-using System;
+п»їusing System;
 using System.Drawing;
-using System.Security.Cryptography;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 
 namespace Lab10
 {
     public partial class Form1 : Form
     {
-        private CancellationTokenSource cancellationTokenSource1 = new CancellationTokenSource();
-        private CancellationTokenSource cancellationTokenSource2 = new CancellationTokenSource();
-        private CancellationTokenSource cancellationTokenSource3 = new CancellationTokenSource();
-
         public Form1()
         {
             InitializeComponent();
+            thread1 = new Thread(new ThreadStart(draw_rect));
+            thread2 = new Thread(new ThreadStart(draw_eclips));
+            thread3 = new Thread(new ThreadStart(Rnd_num));
         }
 
-        private async void button1_Click(object sender, EventArgs e)
-        {
-            cancellationTokenSource1 = new CancellationTokenSource();
-            cancellationTokenSource2 = new CancellationTokenSource();
-            cancellationTokenSource3 = new CancellationTokenSource();
+        Thread thread1;
+        Thread thread2;
+        Thread thread3;
 
-            await Task.Run(() => Method1(cancellationTokenSource1.Token));
-            await Task.Run(() => Method2(cancellationTokenSource2.Token));
-            await Task.Run(() => Method3(cancellationTokenSource3.Token));
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            cancellationTokenSource1?.Cancel();
-            cancellationTokenSource2?.Cancel();
-            cancellationTokenSource3?.Cancel();
-        }
-
-        private void Method1(CancellationToken cancellationToken)
+        private void draw_rect()
         {
             try
             {
-                while (!cancellationToken.IsCancellationRequested)
+                Random rnd = new Random();
+                Graphics g = panel1.CreateGraphics();
+                while (true)
                 {
-                    // Виконати блоковий алгоритм шифрування BLOWFISH
-                    using (var algorithm = new Blowfish())
-                    {
-                        // Ваш код для використання BLOWFISH
-                        // Наприклад, шифрування тексту "Hello, World!"
-                        string plainText = "Hello, World!";
-                        byte[] key = Encoding.UTF8.GetBytes("secretkey"); // Ключ для шифрування
-                        byte[] iv = Encoding.UTF8.GetBytes("initialiv"); // Вектор ініціалізації
-                        byte[] encryptedBytes = algorithm.Encrypt_CBC(Encoding.UTF8.GetBytes(plainText), key, iv);
-
-                        // Розшифрування зашифрованих даних
-                        byte[] decryptedBytes = algorithm.Decrypt_CBC(encryptedBytes, key, iv);
-                        string decryptedText = Encoding.UTF8.GetString(decryptedBytes);
-
-                        MessageBox.Show($"Encrypted text: {Convert.ToBase64String(encryptedBytes)}\nDecrypted text: {decryptedText}");
-                    }
-                    Thread.Sleep(1000); // Пауза для демонстрації
+                    Thread.Sleep(40);
+                    g.DrawRectangle(Pens.Pink, 0, 0, rnd.Next(panel1.Width), rnd.Next(panel1.Height));
                 }
             }
-            catch (OperationCanceledException)
-            {
-                // Обробка скасування операції
-            }
+            catch (Exception ex) { }
         }
 
-        private void Method2(CancellationToken cancellationToken)
+        private void draw_eclips()
         {
             try
             {
-                while (!cancellationToken.IsCancellationRequested)
+                Random rnd = new Random();
+                Graphics g = panel2.CreateGraphics();
+                while (true)
                 {
-                    // Виконати алгоритм хешування MD-5
-                    using (MD5 md5 = MD5.Create())
-                    {
-                        // Ваш код для використання MD5
-                        // Наприклад, хешування тексту "Hello, World!"
-                        string plainText = "Hello, World!";
-                        byte[] hashBytes = md5.ComputeHash(Encoding.UTF8.GetBytes(plainText));
-
-                        // Перетворення байтів хешу в рядок шістнадцяткового формату
-                        StringBuilder builder = new StringBuilder();
-                        foreach (byte b in hashBytes)
-                        {
-                            builder.Append(b.ToString("x2"));
-                        }
-                        string hashString = builder.ToString();
-
-                        MessageBox.Show($"MD5 hash of '{plainText}': {hashString}");
-                    }
-                    Thread.Sleep(1000); // Пауза для демонстрації
+                    Thread.Sleep(40);
+                    g.DrawEllipse(Pens.Pink, 0, 0, rnd.Next(panel2.Width), rnd.Next(panel2.Height));
                 }
             }
-            catch (OperationCanceledException)
-            {
-                // Обробка скасування операції
-            }
+            catch (Exception ex) { }
         }
 
-        private void Method3(CancellationToken cancellationToken)
+        private void Rnd_num()
         {
             try
             {
-                while (!cancellationToken.IsCancellationRequested)
-                {
-                    // Виконати інші алгоритми шифрування та генерації випадкових чисел (WAKE)
-                    using (var algorithm = new Wake())
+                Random rnd = new Random();
+                Parallel.For(0, 500, i => {
+                    richTextBox1.Invoke((MethodInvoker)delegate ()
                     {
-                        // Ваш код для використання WAKE
-                        // Наприклад, генерація випадкового числа
-                        Random random = new Random();
-                        int randomNumber = random.Next();
+                        richTextBox1.Text += rnd.Next().ToString() + " ";
+                    });
+                });
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+        }
 
-                        MessageBox.Show($"Random number generated: {randomNumber}");
-                    }
-                    Thread.Sleep(1000); // Пауза для демонстрації
-                }
-            }
-            catch (OperationCanceledException)
-            {
-                // Обробка скасування операції
-            }
+        private void buttonStartAll_Click(object sender, EventArgs e)
+        {
+            thread1.Start();
+            thread2.Start();
+            thread3.Start();
+        }
+
+        private void buttonStart1_Click(object sender, EventArgs e)
+        {
+            thread1.Start();
+        }
+
+        private void buttonStart2_Click(object sender, EventArgs e)
+        {
+            thread2.Start();
+        }
+
+        private void buttonStart3_Click(object sender, EventArgs e)
+        {
+            thread3.Start();
+        }
+
+        private void buttonStop1_Click(object sender, EventArgs e)
+        {
+            thread1.Suspend();
+        }
+
+        private void buttonStop2_Click(object sender, EventArgs e)
+        {
+            thread2.Suspend();
+        }
+
+        private void buttonStop3_Click(object sender, EventArgs e)
+        {
+            thread3.Suspend();
+        }
+
+        private void buttonStopAll_Click(object sender, EventArgs e)
+        {
+            thread1.Suspend();
+            thread2.Suspend();
+            thread3.Suspend();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            thread1.Abort();
+            thread2.Abort();
+            thread3.Abort();
         }
     }
 }

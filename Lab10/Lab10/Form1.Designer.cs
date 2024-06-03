@@ -2,15 +2,19 @@
 {
     partial class Form1
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button buttonStart1;
+        private System.Windows.Forms.Button buttonStart2;
+        private System.Windows.Forms.Button buttonStart3;
+        private System.Windows.Forms.Button buttonStop1;
+        private System.Windows.Forms.Button buttonStop2;
+        private System.Windows.Forms.Button buttonStop3;
+        private System.Windows.Forms.Button buttonStartAll;
+        private System.Windows.Forms.Button buttonStopAll;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,104 +24,151 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
-            richTextBox1 = new RichTextBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.buttonStart1 = new System.Windows.Forms.Button();
+            this.buttonStart2 = new System.Windows.Forms.Button();
+            this.buttonStart3 = new System.Windows.Forms.Button();
+            this.buttonStop1 = new System.Windows.Forms.Button();
+            this.buttonStop2 = new System.Windows.Forms.Button();
+            this.buttonStop3 = new System.Windows.Forms.Button();
+            this.buttonStartAll = new System.Windows.Forms.Button();
+            this.buttonStopAll = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
-            // pictureBox1
+            // panel1
             // 
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(238, 208);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 200);
+            this.panel1.TabIndex = 0;
             // 
-            // pictureBox2
+            // panel2
             // 
-            pictureBox2.Location = new Point(294, 12);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(237, 215);
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Location = new Point(562, 22);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(209, 205);
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(279, 255);
-            button1.Name = "button1";
-            button1.Size = new Size(291, 81);
-            button1.TabIndex = 3;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(339, 357);
-            button2.Name = "button2";
-            button2.Size = new Size(189, 49);
-            button2.TabIndex = 4;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(218, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 200);
+            this.panel2.TabIndex = 1;
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(601, 246);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(176, 180);
-            richTextBox1.TabIndex = 5;
-            richTextBox1.Text = "";
+            this.richTextBox1.Location = new System.Drawing.Point(424, 12);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(200, 200);
+            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.Text = "";
+            // 
+            // buttonStart1
+            // 
+            this.buttonStart1.Location = new System.Drawing.Point(12, 218);
+            this.buttonStart1.Name = "buttonStart1";
+            this.buttonStart1.Size = new System.Drawing.Size(75, 23);
+            this.buttonStart1.TabIndex = 3;
+            this.buttonStart1.Text = "Запустити 1 Поток";
+            this.buttonStart1.UseVisualStyleBackColor = true;
+            this.buttonStart1.Click += new System.EventHandler(this.buttonStart1_Click);
+            // 
+            // buttonStart2
+            // 
+            this.buttonStart2.Location = new System.Drawing.Point(218, 218);
+            this.buttonStart2.Name = "buttonStart2";
+            this.buttonStart2.Size = new System.Drawing.Size(75, 23);
+            this.buttonStart2.TabIndex = 4;
+            this.buttonStart2.Text = "Запустити 2 Поток";
+            this.buttonStart2.UseVisualStyleBackColor = true;
+            this.buttonStart2.Click += new System.EventHandler(this.buttonStart2_Click);
+            // 
+            // buttonStart3
+            // 
+            this.buttonStart3.Location = new System.Drawing.Point(424, 218);
+            this.buttonStart3.Name = "buttonStart3";
+            this.buttonStart3.Size = new System.Drawing.Size(75, 23);
+            this.buttonStart3.TabIndex = 5;
+            this.buttonStart3.Text = "Запустити 3 Поток";
+            this.buttonStart3.UseVisualStyleBackColor = true;
+            this.buttonStart3.Click += new System.EventHandler(this.buttonStart3_Click);
+            // 
+            // buttonStop1
+            // 
+            this.buttonStop1.ForeColor = System.Drawing.Color.Red;
+            this.buttonStop1.Location = new System.Drawing.Point(93, 218);
+            this.buttonStop1.Name = "buttonStop1";
+            this.buttonStop1.Size = new System.Drawing.Size(119, 23);
+            this.buttonStop1.TabIndex = 6;
+            this.buttonStop1.Text = "Остановить 1 Поток";
+            this.buttonStop1.UseVisualStyleBackColor = true;
+            this.buttonStop1.Click += new System.EventHandler(this.buttonStop1_Click);
+            // 
+            // buttonStop2
+            // 
+            this.buttonStop2.ForeColor = System.Drawing.Color.Red;
+            this.buttonStop2.Location = new System.Drawing.Point(299, 218);
+            this.buttonStop2.Name = "buttonStop2";
+            this.buttonStop2.Size = new System.Drawing.Size(119, 23);
+            this.buttonStop2.TabIndex = 7;
+            this.buttonStop2.Text = "Остановить 2 Поток";
+            this.buttonStop2.UseVisualStyleBackColor = true;
+            this.buttonStop2.Click += new System.EventHandler(this.buttonStop2_Click);
+            // 
+            // buttonStop3
+            // 
+            this.buttonStop3.ForeColor = System.Drawing.Color.Red;
+            this.buttonStop3.Location = new System.Drawing.Point(505, 218);
+            this.buttonStop3.Name = "buttonStop3";
+            this.buttonStop3.Size = new System.Drawing.Size(119, 23);
+            this.buttonStop3.TabIndex = 8;
+            this.buttonStop3.Text = "Остановить 3 Поток";
+            this.buttonStop3.UseVisualStyleBackColor = true;
+            this.buttonStop3.Click += new System.EventHandler(this.buttonStop3_Click);
+            // 
+            // buttonStartAll
+            // 
+            this.buttonStartAll.Location = new System.Drawing.Point(12, 247);
+            this.buttonStartAll.Name = "buttonStartAll";
+            this.buttonStartAll.Size = new System.Drawing.Size(612, 23);
+            this.buttonStartAll.TabIndex = 9;
+            this.buttonStartAll.Text = "Запустить все потоки";
+            this.buttonStartAll.UseVisualStyleBackColor = true;
+            this.buttonStartAll.Click += new System.EventHandler(this.buttonStartAll_Click);
+            // 
+            // buttonStopAll
+            // 
+            this.buttonStopAll.ForeColor = System.Drawing.Color.Red;
+            this.buttonStopAll.Location = new System.Drawing.Point(12, 276);
+            this.buttonStopAll.Name = "buttonStopAll";
+            this.buttonStopAll.Size = new System.Drawing.Size(612, 23);
+            this.buttonStopAll.TabIndex = 10;
+            this.buttonStopAll.Text = "Остановить все потоки";
+            this.buttonStopAll.UseVisualStyleBackColor = true;
+            this.buttonStopAll.Click += new System.EventHandler(this.buttonStopAll_Click);
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(richTextBox1);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
-            Name = "Form1";
-            Text = "Form1";
-            
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(636, 311);
+            this.Controls.Add(this.buttonStopAll);
+            this.Controls.Add(this.buttonStartAll);
+            this.Controls.Add(this.buttonStop3);
+            this.Controls.Add(this.buttonStop2);
+            this.Controls.Add(this.buttonStop1);
+            this.Controls.Add(this.buttonStart3);
+            this.Controls.Add(this.buttonStart2);
+            this.Controls.Add(this.buttonStart1);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Name = "Form1";
+            this.Text = "3 потоковая программа";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+            this.ResumeLayout(false);
+
         }
-
-        #endregion
-
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private Button button1;
-        private Button button2;
-        private RichTextBox richTextBox1;
     }
 }
+
