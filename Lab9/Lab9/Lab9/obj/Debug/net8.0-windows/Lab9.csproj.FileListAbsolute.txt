@@ -1,0 +1,17 @@
+D:\ООП\Lab9\Lab9\Lab9\bin\Debug\net8.0-windows\Lab9.exe
+D:\ООП\Lab9\Lab9\Lab9\bin\Debug\net8.0-windows\Lab9.deps.json
+D:\ООП\Lab9\Lab9\Lab9\bin\Debug\net8.0-windows\Lab9.runtimeconfig.json
+D:\ООП\Lab9\Lab9\Lab9\bin\Debug\net8.0-windows\Lab9.dll
+D:\ООП\Lab9\Lab9\Lab9\bin\Debug\net8.0-windows\Lab9.pdb
+D:\ООП\Lab9\Lab9\Lab9\obj\Debug\net8.0-windows\Lab9.Form1.resources
+D:\ООП\Lab9\Lab9\Lab9\obj\Debug\net8.0-windows\Lab9.Properties.Resources.resources
+D:\ООП\Lab9\Lab9\Lab9\obj\Debug\net8.0-windows\Lab9.csproj.GenerateResource.cache
+D:\ООП\Lab9\Lab9\Lab9\obj\Debug\net8.0-windows\Lab9.GeneratedMSBuildEditorConfig.editorconfig
+D:\ООП\Lab9\Lab9\Lab9\obj\Debug\net8.0-windows\Lab9.AssemblyInfoInputs.cache
+D:\ООП\Lab9\Lab9\Lab9\obj\Debug\net8.0-windows\Lab9.AssemblyInfo.cs
+D:\ООП\Lab9\Lab9\Lab9\obj\Debug\net8.0-windows\Lab9.csproj.CoreCompileInputs.cache
+D:\ООП\Lab9\Lab9\Lab9\obj\Debug\net8.0-windows\Lab9.dll
+D:\ООП\Lab9\Lab9\Lab9\obj\Debug\net8.0-windows\refint\Lab9.dll
+D:\ООП\Lab9\Lab9\Lab9\obj\Debug\net8.0-windows\Lab9.pdb
+D:\ООП\Lab9\Lab9\Lab9\obj\Debug\net8.0-windows\Lab9.genruntimeconfig.cache
+D:\ООП\Lab9\Lab9\Lab9\obj\Debug\net8.0-windows\ref\Lab9.dll
